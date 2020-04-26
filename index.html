@@ -3,11 +3,26 @@
     <head>
         <meta  charset="utf-8">
         <title>Homework</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $( "#tabs" ).tabs();
+            } );
+        </script>
     </head>
     <body>
-        <nav style="text-align: justify;"><a href="#homework1"> homework_1 </a><a href="#homework2"> homework_2 </a><a href="#homework3"> homework_3 </a></nav>
+    <h1 style="text-align: center">Oxygen</h1>
+    <div id="tabs">
+        <ul>
+            <li><a href="#homework1">homework 1</a></li>
+            <li><a href="#homework2">homework 2</a></li>
+            <li><a href="#homework3">homework 3</a></li>
+        </ul>
         <!-- Первое домашнее задание-->
-        <section id="homework1">
+        <div id="homework1">
 
             <h3>первое домашнее задание</h3>
             <h1 style="text-align: center;">Привет, мир!</h1>
@@ -17,9 +32,9 @@
             <em>4</em>
             <em>5</em>
             <em>6</em>
-        </section>
+        </div>
         <!-- Второе домашнее задание-->
-        <section id="homework2">
+        <div id="homework2">
             <h3>второе домашнее задание</h3>
             <table border="1" cols="3" style="width: 100%;">
                 <tr>
@@ -38,9 +53,9 @@
                   <td>вес</td><td>рост</td>
                 </tr>
             </table>
-        </section>
+        </div>
         <!-- Третье домашнее задание-->
-        <section id="homework3">
+        <div id="homework3">
             <h3>Третье домашнее задание</h3>
             <table border="1" cols="4" style="text-align: center;width: 100%">
                 <tr style="height: 200px;">
@@ -156,7 +171,8 @@
                     </td>
                 </tr>
             </table>
-        </section>
+        </div>
+    </div>
     <script>
         function sizePic() {
         size = document.getElementById("size").value;
